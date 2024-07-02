@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D3D2B02C345AFE0050A087 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = 01D3D2AF2C345AFE0050A087 /* SwiftUIIntrospect */; };
+		01D3D2B22C345AFE0050A087 /* SwiftUIIntrospect-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 01D3D2B12C345AFE0050A087 /* SwiftUIIntrospect-Dynamic */; };
+		01D3D2B42C345AFE0050A087 /* SwiftUIIntrospect-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 01D3D2B32C345AFE0050A087 /* SwiftUIIntrospect-Static */; };
 		5B704CAF280E907C0000C65D /* AutosizingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B704CA8280E907C0000C65D /* AutosizingList.swift */; };
 		5B704CB0280E907C0000C65D /* ScalingHeaderScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B704CA9280E907C0000C65D /* ScalingHeaderScrollView.h */; };
 		5B704CB1280E907C0000C65D /* ScalingHeaderScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B704CAA280E907C0000C65D /* ScalingHeaderScrollView.swift */; };
 		5B704CB2280E907C0000C65D /* ScalingHeaderScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B704CAC280E907C0000C65D /* ScalingHeaderScrollViewDelegate.swift */; };
 		5B704CB3280E907C0000C65D /* FrameGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B704CAD280E907C0000C65D /* FrameGetter.swift */; };
-		C8EE19672AB46B3600741F46 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = C8EE19662AB46B3600741F46 /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8EE19672AB46B3600741F46 /* SwiftUIIntrospect in Frameworks */,
+				01D3D2B02C345AFE0050A087 /* SwiftUIIntrospect in Frameworks */,
+				01D3D2B22C345AFE0050A087 /* SwiftUIIntrospect-Dynamic in Frameworks */,
+				01D3D2B42C345AFE0050A087 /* SwiftUIIntrospect-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +115,9 @@
 			);
 			name = ScalingHeaderScrollView;
 			packageProductDependencies = (
-				C8EE19662AB46B3600741F46 /* SwiftUIIntrospect */,
+				01D3D2AF2C345AFE0050A087 /* SwiftUIIntrospect */,
+				01D3D2B12C345AFE0050A087 /* SwiftUIIntrospect-Dynamic */,
+				01D3D2B32C345AFE0050A087 /* SwiftUIIntrospect-Static */,
 			);
 			productName = ScalingHeaderScrollView;
 			productReference = 5B704C9D280E90640000C65D /* ScalingHeaderScrollView.framework */;
@@ -141,7 +147,7 @@
 			);
 			mainGroup = 5B704C93280E90640000C65D;
 			packageReferences = (
-				5B704CB5280E91460000C65D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				01D3D2AE2C345AFE0050A087 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
 			);
 			productRefGroup = 5B704C9E280E90640000C65D /* Products */;
 			projectDirPath = "";
@@ -385,9 +391,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5B704CB5280E91460000C65D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+		01D3D2AE2C345AFE0050A087 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.0;
@@ -396,10 +402,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C8EE19662AB46B3600741F46 /* SwiftUIIntrospect */ = {
+		01D3D2AF2C345AFE0050A087 /* SwiftUIIntrospect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5B704CB5280E91460000C65D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			package = 01D3D2AE2C345AFE0050A087 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
 			productName = SwiftUIIntrospect;
+		};
+		01D3D2B12C345AFE0050A087 /* SwiftUIIntrospect-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01D3D2AE2C345AFE0050A087 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Dynamic";
+		};
+		01D3D2B32C345AFE0050A087 /* SwiftUIIntrospect-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01D3D2AE2C345AFE0050A087 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = "SwiftUIIntrospect-Static";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
